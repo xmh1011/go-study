@@ -1,6 +1,6 @@
 package main
+
 import (
-	"fmt"
 	"image"
 	"image/color"
 	"image/gif"
@@ -10,7 +10,6 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
-	"sync"
 	"time"
 )
 
@@ -21,14 +20,11 @@ const (
 	blackIndex = 1 // next color in palette
 )
 
-var mu sync.Mutex
-var count int
-
 func main() {
 	// The sequence of images is deterministic unless we seed
 	// the pseudo-random number generator using the current time.
 	// 图像序列是确定的，除非我们使用当前时间播种伪随机数生成器
-	rand.Seed(time.Now().UTC().UnixNano())
+	rand.Seed(time.Now().UTC().UnixNano()) // 生成随机数种子
 	if len(os.Args) > 1 && os.Args[1] == "web" {
 		// web()
 		handler := func(w http.ResponseWriter, r *http.Request) {
@@ -37,7 +33,7 @@ func main() {
 		// HandleFunc registers the handler function for the given pattern
 		// in the DefaultServeMux.
 		// The documentation for ServeMux explains how patterns are matched.
-		http.HandleFunc("/", handler)
+		http.HandleFunc("/", handler) // each request calls handler
 		// 回声请求调用处理程序
 		http.HandleFunc("/count", counter)
 		// Fatal is equivalent to Print() followed by a call to os.Exit(1).
@@ -45,14 +41,6 @@ func main() {
 		return
 	}
 	lissajous(os.Stdout)
-}
-
-//counter回显目前为止调用的次数
-func counter(w http.ResponseWriter, r *http.Request) {
-	mu.Lock()
-
-	fmt.Fprintf(w, "Count %d\n", count)
-	mu.Unlock()
 }
 
 //利萨茹图形实现函数

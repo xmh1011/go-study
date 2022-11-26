@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	counts := make(map[string]int)
+	counts := make(map[string]int) //make(map[string]int) is a map literal
 	files := os.Args[1:]
 	if len(files) == 0 {
 		countLines(os.Stdin, counts)
@@ -17,7 +17,7 @@ func main() {
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "demo2: %v\n", err)
 			}
-			countLines(f, counts)
+			countLines(f, counts) //countLines reads from stdin and counts the lines
 			f.Close()
 		}
 	}
@@ -30,7 +30,7 @@ func main() {
 }
 
 func countLines(stdin *os.File, counts map[string]int) {
-	input := bufio.NewScanner(stdin)
+	input := bufio.NewScanner(stdin) //NewScanner returns a new Scanner to read from r.
 	for input.Scan() {
 		counts[input.Text()]++
 	}

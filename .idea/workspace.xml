@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7d19848-635c-4289-a2f8-b6513df13264" name="变更" comment="" />
+    <list default="true" id="a7d19848-635c-4289-a2f8-b6513df13264" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/go-study.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter_1/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter_1/并发获取多个URL.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter_1/获取URL.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/demo1.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter_1/命令行重复输入.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/demo2.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter_1/命令行指定文件.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/demo3.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter_1/读文件操作.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/demo4.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter_1/web李萨茹图形.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/demo5.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter_1/简单web服务器框架.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +48,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultGoTemplateProperty": "Go File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -42,13 +58,14 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
     "last_opened_file_path": "/Users/xiaominghao/GolandProjects/go-study"
   }
 }]]></component>
-  <component name="RunManager" selected="Go 构建.go build example.com/m/chapter_1">
+  <component name="RunManager" selected="Go 构建.go build demo4.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="go-study" />
       <working_directory value="$PROJECT_DIR$" />
@@ -133,6 +150,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

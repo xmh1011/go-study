@@ -8,7 +8,6 @@ import (
 
 func main() {
 	counts := make(map[string]int)
-	// 测试读取标准输入使用 Ctrl+D 结束输入
 	input := bufio.NewScanner(os.Stdin)
 	for input.Scan() {
 		counts[input.Text()]++

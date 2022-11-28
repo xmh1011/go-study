@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7d19848-635c-4289-a2f8-b6513df13264" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter_2/命令行参数.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter_3/comma.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter_3/const.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_1/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter_1/server.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Go 构建.go build demo4.go">
+  <component name="RunManager" selected="Go 构建.go build github.com/xmh1011/go-study/chapter_3/const.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="go-study" />
       <working_directory value="$PROJECT_DIR$" />
@@ -92,14 +91,6 @@
       <filePath value="$PROJECT_DIR$/section_1/demo1.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build demo2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-study" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/section_1/demo2.go" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build demo4.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-study" />
       <working_directory value="$PROJECT_DIR$" />
@@ -117,6 +108,15 @@
       <filePath value="$PROJECT_DIR$/chapter_1/demo5.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build github.com/xmh1011/go-study/chapter_3/const.go" type="GoApplicationRunConfiguration" factoryName="Go Application" singleton="false" temporary="true">
+      <module name="go-study" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/xmh1011/go-study/chapter_3" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/chapter_3/const.go" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="go-study" />
       <working_directory value="$PROJECT_DIR$" />
@@ -129,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build github.com/xmh1011/go-study/chapter_3/const.go" />
         <item itemvalue="Go 构建.go build example.com/m/chapter_1" />
         <item itemvalue="Go 构建.go build demo4.go" />
         <item itemvalue="Go 构建.go build demo1.go (1)" />
         <item itemvalue="Go 构建.go build demo1.go" />
-        <item itemvalue="Go 构建.go build demo2.go" />
       </list>
     </recent_temporary>
   </component>

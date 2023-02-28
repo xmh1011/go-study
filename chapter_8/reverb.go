@@ -40,7 +40,7 @@ func echo(c net.Conn, shout string, delay time.Duration) {
 func handleConnReverb(c net.Conn) {
 	input := bufio.NewScanner(c) // 创建一个新的Scanner，从c中读取数据
 	for input.Scan() {
-		echo(c, input.Text(), 1*time.Second)
+		go echo(c, input.Text(), 1*time.Second)
 	}
 	// 注意：忽略input.Err()中可能的错误
 	c.Close()

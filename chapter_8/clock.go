@@ -27,7 +27,8 @@ func main() {
 			log.Print(err)
 			continue
 		}
-		handleConn(conn) // 并发处理客户端的连接请求
+		go handleConn(conn) // 并发处理客户端的连接请求
+		// 在前面添加一个go关键字，使函数在自己的goroutine中执行，而不是在主goroutine中执行
 	}
 }
 

@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	for _, url := range os.Args[1:] { //os.Args[1:]表示从第二个参数开始，也就是从第一个url开始
+	for _, url := range os.Args[1:] { // os.Args[1:]表示从第二个参数开始，也就是从第一个url开始
 		resp, err := http.Get(url) // http.Get(url) 会返回一个 http.Response 和一个 error
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "fetch: %v\n", err)

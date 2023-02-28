@@ -27,7 +27,7 @@ func main() {
 			log.Print(err)
 			continue
 		}
-		go handleConn(conn) // 并发处理客户端的连接请求
+		handleConn(conn) // 并发处理客户端的连接请求
 	}
 }
 

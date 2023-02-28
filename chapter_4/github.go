@@ -33,7 +33,7 @@ type User struct {
 	HTMLURL string `json:"html_url"`
 }
 
-// SearchIssues函数查询GitHub的issue跟踪接口
+// SearchIssues SearchIssues函数查询GitHub的issue跟踪接口
 func SearchIssues(terms []string) (*IssuesSearchResult, error) {
 	// QueryEscape转义字符串，以便将其安全地放在URL查询中
 	q := url.QueryEscape(strings.Join(terms, " ")) // 将terms中的元素用空格连接起来，并进行url编码

@@ -88,7 +88,7 @@ func main() {
 
 // visit 将每个链接添加到 links 中，并返回结果。
 func visit(links []string, n *Node) []string {
-	if n.Type == ElementNode && n.Data == "a" {
+	if n.Type == ElementNode && n.Data == "a" { // 遇到 a 元素
 		for _, a := range n.Attr { // 遍历属性
 			if a.Key == "href" {
 				links = append(links, a.Val)
@@ -100,4 +100,3 @@ func visit(links []string, n *Node) []string {
 	}
 	return links
 }
-

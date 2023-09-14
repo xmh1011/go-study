@@ -5,15 +5,16 @@ import (
 	"golang.org/x/net/html"
 	"log"
 	"net/http"
-	"os"
 )
+
+var Urls = []string{"sadkuwgfw", "dxsadfhak", "sdfhakjshdf"}
 
 func main() {
 	worklist := make(chan []string)  // 可能有重复的URL列表
 	unseenLinks := make(chan string) // 去重
 	
 	// 向worklist发送命令行参数中的URL
-	go func() { worklist <- os.Args[1:] }()
+	go func() { worklist <- Urls }()
 	
 	// 创建20个爬虫goroutine来获取每个不可见链接
 	for i := 0; i < 20; i++ {
